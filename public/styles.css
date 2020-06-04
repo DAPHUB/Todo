@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+body {
+    font-size: 1.6rem;
+    
+}
+.app {
+    display: flex;
+    justify-content: center;
+    width: 630px;
+    margin: 5rem auto;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.app-body > input {
+    font-size: inherit;
+    padding: .6rem;   
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.options select,
+.options button {
+    font-size: 1.2rem;
+}
+
+.todo {  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: .7rem 1rem;
+    padding: .4rem;
+    border: 1px solid black;
+    border-radius: .2rem;
+    transition: all .7s ease;
+}
+
+.todo .check-box {
+    transform: scale(1.5);
+    margin: 0 .4rem;
+}
+.todo span {
+    font-size: 1.3rem;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding-left: .5rem;
+    word-wrap: break-word;
+    
+}
+
+.todo button{
+    cursor: pointer;
+    display: block;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin: 0 .4rem;
+    border: 1px solid gray;
+    border-radius: .2rem;
+    outline: none;  
+}
+.todo .remove-todo,
+.todo .edit-todo {
+    transition: .5s;
+}
+.todo .remove-todo:hover {
+    color: red;
+    border-color: red;
+}
+
+.todo .edit-todo:hover{
+    color: orange;
+    border-color: orange;
+}
+
+
+
+.complete {
+    text-decoration: line-through;
+    color: gray;
+}
+.isCompleted {
+    opacity: 0.5;   
+}
+.edited {
+    border: 1px solid orange;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
